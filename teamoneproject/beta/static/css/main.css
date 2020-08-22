@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Nanum Square',sans-serif;
+}
+
+#header-bar {
+    display: flex;
+    border: none;
+    
+    height: 80px;
+    width: 100%;
+
+    background: rgba(4, 10, 94, 0.918);
+    color: white;
+}
+
+.logo {
+    margin-top: 18px;
+    margin-left: 17px;
+}
+
+.header-content { 
+    display: inline-block;
+}
+
+.menu-bar {
+    position: absolute;
+
+    text-align: right;
+
+    height: 80px;
+    width: 1000px;
+
+    background: transparent;
+}
+
+a {
+    text-decoration: none; 
+    color: white;
+}
+
+ul, li {
+    list-style: none;
+}
+
+ul {
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+li {
+    display: inline;
+    cursor: pointer;
+
+    margin: 0px 15px;
+}
+
+.register {
+    display: inline;
+    margin-left: 80px;
+    margin-right: -100px;
+}

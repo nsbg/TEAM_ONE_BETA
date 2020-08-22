@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+    <title>TEAM_ONE_BETA :: 회원 가입</title>
+</head>
+<body>
+    {{error}}
+    
+    <div class="signup-container">
+        <form method="POST">
+            {% csrf_token %}
+
+            <div class="signup id-input">
+                아이디
+                <br>
+                <input type="text" name="=username">
+            </div>
+            <br>
+
+            <div class="signup pw-input">
+                비밀번호
+                <br>
+                <input type="password" name="password">
+            </div>
+            <br>
+            
+            <div class="signup re-pw-input">
+                비밀번호 확인
+                <br>
+                <input type="password" name="confirm_pw">
+            </div>
+            <br>
+
+            <button type="submit" class="signup-btn">가입하기</button>
+        </form>
+    </div>
+</body>
+</html>
